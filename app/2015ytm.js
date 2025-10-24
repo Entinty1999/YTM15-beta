@@ -301,7 +301,7 @@ metaColorElm.content = "#000000";
 }
 }
 
-APIbaseURL = "https://invidious.nerdvpn.de/";
+APIbaseURL = "http://127.0.0.1:3000/";
 APIbaseURLWatch = "https://inv.nadeko.net/";
 APIbaseURLNew = "https://yt-api.p.rapidapi.com/";
 APIbaseURLPiped = "https://pipedapi.leptons.xyz/";
@@ -568,7 +568,7 @@ dataModeChange();
 renderHeader();
 
 function renderCommentSection(parent, mediaType, cmSource, isCMPage, comntId, comntContinuation){
-    var cmBaseAPIURL = 'https://invidious.nerdvpn.de/api/v1/comments/';
+    var cmBaseAPIURL = 'http://127.0.0.1:3000/api/v1/comments/';
 
     const commentSection = document.createElement("div");
     commentSection.classList.add("comment-section");
@@ -1153,7 +1153,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
 
         const image = document.createElement('img');
         image.classList.add('thumbnail-img', 'ytm15-img', 'lazy');
-        image.src = itemThumbnail;
+        image.src = itemThumbnail;console.log(itemThumbnail);
         image.loading = "lazy";
         image.onload = function(){image.classList.add('loaded');};
 
@@ -1512,7 +1512,7 @@ function renderMediaItem(parent, parentName, itemVideoId, itemThumbnail, itemLen
 
         const image = document.createElement('img');
         image.classList.add('thumbnail-img', 'ytm15-img', 'lazy');
-        image.src = itemThumbnail;
+        image.src = itemThumbnail;console.log(itemThumbnail)
         image.loading = "lazy";
         image.onload = function(){image.classList.add('loaded');};
 

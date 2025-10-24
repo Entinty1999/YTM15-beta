@@ -823,7 +823,7 @@ function channelPage() {
         compMediaItemAuthor = "No subscribers";
         }
         compMediaItemvidId = "";
-        renderCompactMediaItem(verticalList, "shelf", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item1.channelId, "", "", "channel");
+        renderCompactMediaItem(verticalList, "shelf", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item1.channelId, "", "", "channel");
     });
         if (ESButtonCont && item.type == "channel_listing" && item.data.length > 3) {
         ESButtonCont.remove();
@@ -907,7 +907,7 @@ function channelPage() {
           cmiParent = "shelf";
           cmiType = "video";
         }
-        renderCompactMediaItem(verticalList, cmiParent, compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, cmiPublishedText, cmiViewCount, cmiType);
+        renderCompactMediaItem(verticalList, cmiParent, compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, cmiPublishedText, cmiViewCount, cmiType);
     });
     };
 
@@ -1205,7 +1205,7 @@ function channelPage() {
         compMediaItemAuthor = item.channelTitle;
         compMediaItemvidId = item.videoId;
         }
-        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
+        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
     });
     };
 
@@ -1319,7 +1319,7 @@ function channelVideosContin(continuation, contItemParent) {
         compMediaItemAuthor = item.channelTitle;
         compMediaItemvidId = item.videoId;
         }
-        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
+        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
     });
     };
 
@@ -1493,7 +1493,7 @@ function channelVideosContin(continuation, contItemParent) {
         compMediaItemAuthor = item.author;
         compMediaItemvidId = item.videoId;
         }
-        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, item.publishedText, item.viewCount, item.type);
+        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, item.publishedText, item.viewCount, item.type);
     });
 
     if (data.continuation) {
@@ -1592,7 +1592,7 @@ function channelVideosContin(continuation, contItemParent) {
         compMediaItemAuthor = item.author;
         compMediaItemvidId = item.videoId;
         }
-        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, item.publishedText, item.viewCount, item.type);
+        renderCompactMediaItem(lazyList, "channel-lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, item.publishedText, item.viewCount, item.type);
     });
 
     if (data.continuation) {
@@ -1713,7 +1713,7 @@ function channelVideosContin(continuation, contItemParent) {
         compMediaItemTitle = data.author;
         compMediaItemAuthor = data.subCount.toLocaleString() + " subscribers";
         compMediaItemvidId = "";
-        renderCompactMediaItem(lazyList, "lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, data.authorId, "", "", "channel");
+        renderCompactMediaItem(lazyList, "lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, data.authorId, "", "", "channel");
     } else {
     getShelfChannels.onerror();
     }
@@ -1801,7 +1801,7 @@ function channelVideosContin(continuation, contItemParent) {
         compMediaItemTitle = data.author;
         compMediaItemAuthor = data.subCount.toLocaleString() + " subscribers";
         compMediaItemvidId = "";
-        renderCompactMediaItem(verticalList, "shelf", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, data.authorId, "", "", "channel");
+        renderCompactMediaItem(verticalList, "shelf", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, data.authorId, "", "", "channel");
 
         if (ESButtonCont && item.snippet.type == "multiplechannels" && item.contentDetails.channels.length > 3) {
         ESButtonCont.remove();

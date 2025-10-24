@@ -262,7 +262,7 @@ function searchPageContin(continuation, contItemParent) {
         compMediaItemvidId = item.videoId;
         }
         if (item.type !== "shorts_listing" && item.type !== "video_listing" && item.type !== "ad") {
-        renderCompactMediaItem(lazyList, "lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
+        renderCompactMediaItem(lazyList, "lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, item.publishedTimeText, item.viewCount, item.type);
         }
     });
 

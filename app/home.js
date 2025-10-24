@@ -261,8 +261,9 @@ function renderData() {
 
         oldTitle.parentNode.replaceChild(title, oldTitle);
 
-        data.forEach(function(item) {
-            renderMediaItem(sectLazyList, "sect-lazy-list", item.videoId, item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount);
+            data.forEach(function (item) {
+            console.log("http://127.0.0.1:3000" + item.videoThumbnails[3].url)
+            renderMediaItem(sectLazyList, "sect-lazy-list", item.videoId, "http://127.0.0.1:3000" + item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount);
         });
     } else {
     getHomeData.onerror();
@@ -372,7 +373,7 @@ function renderData() {
         oldTitle.parentNode.replaceChild(title, oldTitle);
 
         data.forEach(function(item) {
-            renderMediaItem(sectLazyList, "sect-lazy-list", item.videoId, item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount);
+            renderMediaItem(sectLazyList, "sect-lazy-list", item.videoId, "http://127.0.0.1:3000" + item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount);
         });
     } else {
     getHomeData1.onerror();
@@ -590,7 +591,7 @@ function renderData() {
     oldTitle.parentNode.replaceChild(title, oldTitle);
 
     data.forEach(function(item) {
-        renderCompactMediaItem(verticalList, "shelf", item.videoId, item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount, item.type);
+        renderCompactMediaItem(verticalList, "shelf", item.videoId, "http://127.0.0.1:3000" + item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount, item.type);
     });
     
     if (data.length > 3) {
@@ -720,7 +721,7 @@ function renderDataTrending(homeShelfTrendingType, shelfTitle) {
     shelf.appendChild(verticalList);
 
     data.forEach(function(item) {
-        renderCompactMediaItem(verticalList, "shelf", item.videoId, item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount, item.type);
+        renderCompactMediaItem(verticalList, "shelf", item.videoId, "http://127.0.0.1:3000" + item.videoThumbnails[3].url, item.lengthSeconds, item.title, item.author, item.authorId, item.publishedText, item.viewCount, item.type);
     });
 
     if (data.length > 3) {

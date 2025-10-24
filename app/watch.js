@@ -568,7 +568,7 @@ function renderWatchPage(parent) {
         compMediaItemAuthor = item.channelTitle;
         compMediaItemvidId = item.videoId;
         }
-        renderCompactMediaItem(itemSectRelated.querySelector(".lazy-list"), "related-media-lazy-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, "", item.viewCount, item.type);
+        renderCompactMediaItem(itemSectRelated.querySelector(".lazy-list"), "related-media-lazy-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.channelId, "", item.viewCount, item.type);
     });
 
     renderCommentSection(W2ndHalf, "video", playerVideoId, false);

@@ -147,7 +147,7 @@ function playlistPage(){
         compMediaItemTitle = item.title;
         compMediaItemAuthor = item.author;
         compMediaItemvidId = item.videoId;
-        renderCompactMediaItem(playlistVideoList, "playlist-video-list", compMediaItemvidId, compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, "", "", "video");
+        renderCompactMediaItem(playlistVideoList, "playlist-video-list", compMediaItemvidId, "http://127.0.0.1:3000" + compMediaItemThumb, compMediaItemLength, compMediaItemTitle, compMediaItemAuthor, item.authorId, "", "", "video");
     });
 
     playArrowBtn.onclick = function(){
