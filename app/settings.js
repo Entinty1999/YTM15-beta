@@ -273,7 +273,7 @@ function settingsPage() {
       headerTitle.textContent = Feedback_text_string;
       title.textContent = Feedback_text_string + ' - 2015YouTube';
 
-      settingsPage.innerHTML="<p>Open an issue on the YTm15 GitHub:<br>https://github.com/ytm15/ytm15.github.io/issues</p><p>Check for pull requests open (If any of the features you want may be being added):<br>https://github.com/ytm15/ytm15.github.io/pulls</p><p>You can also post on r/oldyoutubelayout (the dev is active there)</p>";
+      settingsPage.innerHTML="<p>Open an issue on the YTm15 GitHub:<br>https://github.com/ytm15/ytm15.github.io/issues</p><p>Check pull request #60 (If any of the features you want may be being added, and haven't been merged into YTm15 BETA yet):<br>https://github.com/ytm15/ytm15.github.io/pulls</p><p>You can also post on r/oldyoutubelayout (the dev is active there). If you have any issues with YTm15 BETA, post them at <br>https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/issues , or YTm15 Pull Request #60 if they relate to legoskid's code.</p><p></p>";
       }
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "install") {
       /* innerSettingsPageCont.innerHTML = `
@@ -775,7 +775,7 @@ function settingsPage() {
       {
         "type": "boolean",
         "title": "HEADER_CAST_BUTTON_AS_URL_BOX",
-        "subtitle": "Copy a youtube link and press cast to open it in YTm15",
+        "subtitle": "Copy a youtube link and press cast to open it in YTm15 BETA",
         "pressed": HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true",
         "pressed-default": false,
         "disabled": false,
