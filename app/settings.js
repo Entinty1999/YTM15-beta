@@ -180,7 +180,7 @@ function settingsPage() {
     pageCont.appendChild(page);
     page.appendChild(ytm15settings);
 
-    title.textContent = Settings_text_string + ' - 2015YouTube';
+    title.textContent = Settings_text_string + ' - 2015YouTube BETA';
 
     function settingsEventListenFunc(){
     const settingsOpts = settingsOptCont.querySelectorAll(".settings-category");
@@ -197,7 +197,7 @@ function settingsPage() {
     settingsPageHeader.id = "settings";
     headerTitle.setAttribute("aria-label", Settings_text_string);
     headerTitle.textContent = Settings_text_string;
-    title.textContent = Settings_text_string + ' - 2015YouTube';
+    title.textContent = Settings_text_string + ' - 2015YouTube BETA';
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== undefined && window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== "") {
       ytm15settings.classList.add("page-visible");
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "general") {
@@ -213,7 +213,7 @@ function settingsPage() {
       settingsPageHeader.id = "general";
       headerTitle.setAttribute("aria-label", General_text_string);
       headerTitle.textContent = General_text_string;
-      title.textContent = General_text_string + ' - 2015YouTube';
+      title.textContent = General_text_string + ' - 2015YouTube BETA';
 
       if (WEB_ENABLE_DARK_THEME_OPTION_expflag == "true") {
       settingBooleanDark = {
@@ -271,7 +271,7 @@ function settingsPage() {
       settingsPageHeader.id = "feedback";
       headerTitle.setAttribute("aria-label", Feedback_text_string);
       headerTitle.textContent = Feedback_text_string;
-      title.textContent = Feedback_text_string + ' - 2015YouTube';
+      title.textContent = Feedback_text_string + ' - 2015YouTube BETA';
 
       settingsPage.innerHTML="<p>Open an issue on the YTm15 GitHub:<br>https://github.com/ytm15/ytm15.github.io/issues</p><p>Check pull request #60 (If any of the features you want may be being added, and haven't been merged into YTm15 BETA yet):<br>https://github.com/ytm15/ytm15.github.io/pulls</p><p>You can also post on r/oldyoutubelayout (the dev is active there). If you have any issues with YTm15 BETA, post them at <br>https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/issues , or YTm15 Pull Request #60 if they relate to legoskid's code.</p><p></p>";
       }
@@ -294,9 +294,9 @@ function settingsPage() {
       settingsPageHeader.id = "install";
       headerTitle.setAttribute("aria-label", InstallYtm15_text_string);
       headerTitle.textContent = InstallYtm15_text_string;
-      title.textContent = InstallYtm15_text_string + ' - 2015YouTube';
+      title.textContent = InstallYtm15_text_string + ' - 2015YouTube BETA';
 
-      settingsPage.innerHTML=`<table style="border-top: 1px solid;border-bottom: 1px solid;margin-bottom:1rem;"><tr style="font-size:18px;"><td><img src="icon.png" width=60 style="padding-right: 5px;"></td><td>2015YouTube<br><span style="font-size:16px;">ytm15.github.io</span></td><td class="has-ripple" style="text-align:right;width: 100%;padding-right:3rem"><span style="border:1px solid;padding:3px;font-weight:bold;text-transform:uppercase;">Get as a Webapp</td></tr></table><ol><li>Open Safari (iOS)/Chrome (Android)</li><li>Go to ytm15.github.io/app</li><li>Press "share"/the three dots</li><li>Press "Add to Home Screen"</li></ol>`;
+      settingsPage.innerHTML=`<table style="border-top: 1px solid;border-bottom: 1px solid;margin-bottom:1rem;"><tr style="font-size:18px;"><td><img src="icon.png" width=60 style="padding-right: 5px;"></td><td>2015YouTube BETA<br><span style="font-size:16px;">ytm15-beta-org.github.io</span></td><td class="has-ripple" style="text-align:right;width: 100%;padding-right:3rem"><span style="border:1px solid;padding:3px;font-weight:bold;text-transform:uppercase;">Get as a Webapp</td></tr></table><ol><li>Open Safari (iOS)/Chrome (Android)</li><li>Go to ytm15-beta-org.github.io/app</li><li>Press "share"/the three dots</li><li>Press "Add to Home Screen"</li></ol>`;
       }
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "expflags") {
       /* innerSettingsPageCont.innerHTML = `
@@ -310,7 +310,7 @@ function settingsPage() {
       settingsPageHeader.innerHTML = ExpFlags_text_string;
       headerTitle.setAttribute("aria-label", ExpFlags_text_string);
       headerTitle.textContent = ExpFlags_text_string;
-      title.textContent = ExpFlags_text_string + ' - 2015YouTube';
+      title.textContent = ExpFlags_text_string + ' - 2015YouTube BETA';
       
       settingBlocks = [
       {

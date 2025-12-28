@@ -19,8 +19,8 @@ function aboutYTm15() {
     var spinner = document.querySelector(".spinner-container.full-height");
     spinner.setAttribute("hidden", "");
 
-    headerTitle.setAttribute("aria-label", "About 2015YouTube");
-    headerTitle.textContent = "About 2015YouTube";
+    headerTitle.setAttribute("aria-label", "About 2015YouTube BETA");
+    headerTitle.textContent = "About 2015YouTube BETA";
 
     const page = document.createElement("page");
     page.classList.add('aboutYTm15');
@@ -147,7 +147,7 @@ Changelog
     aboutPage.appendChild(section);
 
     var title = document.querySelector("title");
-    title.textContent = 'About - 2015YouTube';
+    title.textContent = 'About - 2015YouTube BETA';
 
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(2, 3)[0] == "changelog") {
       sectLazyList.innerHTML = `<div class="ap-shelf">
@@ -627,6 +627,10 @@ legoskid, 23 Dec 2025
 Entinty1999, 25 Dec 2025
 -Changed YTm15 branding to YTm15 BETA in A LOT of places
 -Added the BETA (or something) changelog
+
+Entinty1999, 27 Dec 2025
+-Changed more YTm15 branding to YTm15 BETA
+-Fixed "Install YTm15 BETA" tab to actually give correct information on YTm15 BETA instead of regular YTm15 (e.g. correct URL etc)
 
 
     </div>

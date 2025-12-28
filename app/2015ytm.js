@@ -403,7 +403,7 @@ Subscribe_text_string = "Subscribe"
 Home_text_string = "Home"
 Popular_text_string = "Popular"
 Trending_text_string = "Trending"
-_2015YT_text_string = "2015YouTube"
+_2015YT_text_string = "2015YouTube BETA"
 SearchYT_text_string = "Search YouTube"
 /* Channel_Home_WIP_text_string = "Channel pages' home pages are currently being worked on. Please check back later" */
 Channel_Home_WIP_text_string = "Channel pages' home pages haven't been built yet. Please check back later";
@@ -2573,7 +2573,7 @@ if (window.location.hash.split("/").join(',').split("?").join(',').split(',').sl
     }
 if (!wasPrevChannelPage) {
     pageCont.innerHTML = "";
-    title.textContent = "2015YouTube";
+    title.textContent = "2015YouTube BETA";
     headerTitle.setAttribute("aria-label", _2015YT_text_string);
     headerTitle.textContent = _2015YT_text_string;
 }
@@ -2606,12 +2606,12 @@ function settingsHashDetector() {
 settingsPage();
 }
 
-if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20(Mobile)") {
+if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20BETA%20(Mobile)") {
 if (window.location.pathname.split("/").slice(3, 4) == "index.html" || window.location.pathname.split("/").slice(3, 4) == undefined || window.location.pathname.split("/").slice(3, 4) == "") { 
 hashDetector();
 }
 }
-if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20(Mobile)") {
+if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20BETA%20(Mobile)") {
 if (window.location.pathname.split("/").slice(2, 3) == "index.html" || window.location.pathname.split("/").slice(2, 3) == undefined || window.location.pathname.split("/").slice(2, 3) == "") { 
 hashDetector();
 }
