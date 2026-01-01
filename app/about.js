@@ -632,6 +632,10 @@ Entinty1999, 27 Dec 2025
 -Changed more YTm15 branding to YTm15 BETA
 -Fixed "Install YTm15 BETA" tab to actually give correct information on YTm15 BETA instead of regular YTm15 (e.g. correct URL etc)
 
+legoskid, 31 Dec 2025
+-Made the YTm15 player's progress bar hitbox bigger
+-Fixed playlists breaking due to expflag APP_DONT_AUTH_TO_INVIDIOUS
+-Added player errors so that the player will not appear as a black square when it fails to load the video
 
     </div>
     </div>
@@ -650,4 +654,5 @@ Entinty1999, 27 Dec 2025
       item.classList.add('card');
       });
     }
+
 }
