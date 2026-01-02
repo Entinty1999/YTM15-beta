@@ -637,6 +637,12 @@ legoskid, 31 Dec 2025
 -Fixed playlists breaking due to expflag APP_DONT_AUTH_TO_INVIDIOUS
 -Added player errors so that the player will not appear as a black square when it fails to load the video
 
+legoskid, 1 Jan 2026
+-Added new expflag HEADER_YOUTUBE_BRANDING
+-Fixed the width of the YouTube Red logo asset
+-Partially fixed expflag HEADER_CAST_ALTERNATE_ICON
+-Fixed playlists and comments being broken in the last update
+
     </div>
     </div>
     </div>
@@ -656,3 +662,4 @@ legoskid, 31 Dec 2025
     }
 
 }
+
