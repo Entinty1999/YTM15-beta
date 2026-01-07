@@ -643,6 +643,10 @@ legoskid, 1 Jan 2026
 -Partially fixed expflag HEADER_CAST_ALTERNATE_ICON
 -Fixed playlists and comments being broken in the last update
 
+legoskid, 6 Jan 2026
+-Changed the Download SVG to be more accurate
+-Added new expflag WATCH_AUTOPLAY_SWITCH (Autoplay toggle currently does not function)
+-Fixed overflow of icons on smaller devices
     </div>
     </div>
     </div>
@@ -662,4 +666,5 @@ legoskid, 1 Jan 2026
     }
 
 }
+
 
