@@ -647,6 +647,11 @@ legoskid, 6 Jan 2026
 -Changed the Download SVG to be more accurate
 -Added new expflag WATCH_AUTOPLAY_SWITCH (Autoplay toggle currently does not function)
 -Fixed overflow of icons on smaller devices
+
+legoskid, 7 Jan 2026
+-Fully fixed expflag HEADER_CAST_ALTERNATE_ICON to have working Camera icon
+-Added "fun fact" to expflag HEADER_NO_SHADOW
+
     </div>
     </div>
     </div>
@@ -666,5 +671,6 @@ legoskid, 6 Jan 2026
     }
 
 }
+
 
 
