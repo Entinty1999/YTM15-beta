@@ -712,7 +712,7 @@ function settingsPage() {
       {
         "type": "text",
         "title": "APP_CUSTOM_INVIDIOUS_URL",
-        "subtitle": "This loads your home page and comments. <small>which should update and not be static</small><br>If you have your own invidious instance put it here<br>You should change CORS policy if you own your instance, otherwise use a CORS redirector<br><small>If you want to setup an invidious instance, there is always google, however your average PC probably will lag out (the preset instance is probably fine for you)</small><br>Clear the text box to reset the url",
+        "subtitle": "This loads your home page and comments. <small>which should update and not be static</small><br>If you have your own invidious instance put it here<br>You should change CORS policy if you own your instance, otherwise use a CORS redirector. If you can use a CORS disabler extension, you can also remove the starting proxy url, it will make it faster.<br><small>If you want to setup an invidious instance, there is always google, however your average PC probably will lag out (the preset instance is probably fine for you)</small><br>Clear the text box to reset the url",
         "value": "https://api.codetabs.com/v1/proxy?quest=https://inv.perditum.com/",
         "placeholder": "",
         "disabled": false,
@@ -884,6 +884,24 @@ function settingsPage() {
         "pressed-default": false,
         "disabled": false,
         "lsitem": "WATCH_AUTOPLAY_SWITCH"
+      },
+      {
+        "type": "boolean",
+        "title": "HEADER_USE_ACCOUNT_ICON",
+        "subtitle": "",
+        "pressed": HEADER_USE_ACCOUNT_ICON_expflag == "true",
+        "pressed-default": false,
+        "disabled": false,
+        "lsitem": "HEADER_USE_ACCOUNT_ICON"
+      },
+      {
+        "type": "text",
+        "title": "HEADER_ACCOUNT_ICON_LINK",
+        "subtitle": "",
+        "value": "",
+        "placeholder": "",
+        "disabled": false,
+        "lsitem": "HEADER_ACCOUNT_ICON_LINK"
       }
       ];
       settingBlocks.forEach(function(item){
