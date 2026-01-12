@@ -652,6 +652,18 @@ legoskid, 7 Jan 2026
 -Fully fixed expflag HEADER_CAST_ALTERNATE_ICON to have working Camera icon
 -Added "fun fact" to expflag HEADER_NO_SHADOW
 
+legoskid, 9 Jan 2026
+-Fixed comments section being under ytm15-video-metadata when it was intended to be under wnr-2nd-half
+-Changed the description of expflag APP_CUSTOM_INVIDIOUS_URL to add additional details on CORS disablers
+-Added expflags HEADER_USE_ACCOUNT_ICON and HEADER_ACCOUNT_ICON_LINK to change menu button
+
+legoskid, 12 Jan 2026
+-Fixed a minor typo in the last update
+-Reverted default Invidious URL to the original one before this Pull Request due to issues (although kept newer cors proxy)
+
+
+
+
     </div>
     </div>
     </div>
@@ -671,6 +683,7 @@ legoskid, 7 Jan 2026
     }
 
 }
+
 
 
 
