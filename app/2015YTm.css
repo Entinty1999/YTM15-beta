@@ -6100,3 +6100,26 @@ html.style-2013.dark.dark-21 {
 .style-2013.dark.dark-21 .ytm15-video-owner .material-button-container[data-style="BRAND"] .material-button {
     background: linear-gradient(#323232, #252525);
 }
+.notification {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    transition: transform .35s cubic-bezier(.22,.9,.35,1), opacity .25s;
+    display: inline-block;
+    max-width: calc(100% - 40px);
+    padding: 20px 32px;
+    background: #2e2e2e;
+    color: #f1f1f1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: unset;
+    box-sizing: border-box;
+    line-height: 1.25;
+    font-size: 15px;
+    z-index: 9999;
+    white-space: normal;
+}
+.notification.notification-show {
+    transform: translate(-50%, 0);
+}
