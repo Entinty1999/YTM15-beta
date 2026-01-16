@@ -919,6 +919,24 @@ function settingsPage() {
         "pressed-default": false,
         "disabled": false,
         "lsitem": "WATCH_SAVE_IS_ADD_TO"
+      },
+      {
+        "type": "boolean",
+        "title": "PIVOT_TRENDING_IS_EXPLORE",
+        "subtitle": "",
+        "pressed": PIVOT_TRENDING_IS_EXPLORE_expflag == "true",
+        "pressed-default": false,
+        "disabled": false,
+        "lsitem": "PIVOT_TRENDING_IS_EXPLORE"
+      },
+      {
+        "type": "boolean",
+        "title": "PIVOT_LIBRARY_UPDATED_ICON",
+        "subtitle": "",
+        "pressed": PIVOT_LIBRARY_UPDATED_ICON_expflag == "true",
+        "pressed-default": false,
+        "disabled": false,
+        "lsitem": "PIVOT_LIBRARY_UPDATED_ICON"
       }
       ];
       settingBlocks.forEach(function(item){
