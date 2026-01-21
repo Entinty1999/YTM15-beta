@@ -19,8 +19,8 @@ function aboutYTm15() {
     var spinner = document.querySelector(".spinner-container.full-height");
     spinner.setAttribute("hidden", "");
 
-    headerTitle.setAttribute("aria-label", "About 2015YouTube BETA");
-    headerTitle.textContent = "About 2015YouTube BETA";
+    headerTitle.setAttribute("aria-label", "About 2015YouTube");
+    headerTitle.textContent = "About 2015YouTube";
 
     const page = document.createElement("page");
     page.classList.add('aboutYTm15');
@@ -43,10 +43,10 @@ function aboutYTm15() {
     <div class="item-section">
     <div class="lazy-list no-animation">
     <div class="about-page-heading">
-YouTube Mobile 2015 BETA (or something)/YTm15 BETA<img class="ytm15-logo ytm15-img" src="YouTube Mobile 2015 Logo (with shadow).png"></img>
+YouTube Mobile 2015/YTm15<img class="ytm15-logo ytm15-img" src="YouTube Mobile 2015 Logo (with shadow).png"></img>
     </div>
     <div class="about-page-subheading">
-The 2015 YouTube experience, brought back to your smart device (BETA, or something)
+The 2015 YouTube experience, brought back to your smart device
     </div>
     </div>
     </div>
@@ -54,25 +54,18 @@ The 2015 YouTube experience, brought back to your smart device (BETA, or somethi
     <div class="ap-shelf">
     <div class="ap-shelf-header">
     <h3>
-    What is YTm15 BETA/YouTube Mobile 2015 BETA (or something)?
-    </h3>
-    </div>
-
-    <div class="ap-shelf-content">
-    <div class="ap-shelf-text">YouTube Mobile 2015 BETA (or something, also known as YTm15 BETA) is a slightly modified fork of legoskid's Pull Request #60 on the original YTm15. Its goal is to host active Pull Requests on YTm15 so they can be tested by the general public without needing to set up a localhost. It is not affiliated with either Yacine-Book or legoskid. The maintainer of YTm15 BETA is Entinty1999.
-    <h3>
-    What is YTm15/YouTube Mobile 2015?
+What is YTm15/YouTube Mobile 2015?
     </h3>
     </div>
 
     <div class="ap-shelf-content">
     <div class="ap-shelf-text">YouTube Mobile 2015 (also known as YTm15) is a project of mine to rebuild the 2015 version of the interface of YouTube for mobile. The creator of YTm15 is Yacine Ghuloum.
 
-YTm15 BETA has been maintained since Dec 2025. The original YTm15 project has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015. (Or just for people who want to use YT with an older look<!-- ig -->)
+This project has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015. (Or just for people who want to use YT with an older look<!-- ig -->)
 
 YTm15 is based off of version 10 of the Android YT app
 <!-- The line below was previously: "Please note that YTm15 as it is in its current state is unfinished, so a lot of things you'd expect to see in something like this (e.g. channel pages, search page, playlist page, and even watchpage) are not present/built/finished in this app yet" -->
-Please note YTm15 BETA is based on flimsy code and I am not an experienced Javascript or CSS developer. YTm15 itself as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
+Please note YTm15 as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
 </div>
     </div>
     </div>
@@ -80,15 +73,15 @@ Please note YTm15 BETA is based on flimsy code and I am not an experienced Javas
     <div class="ap-shelf">
     <div class="ap-shelf-header">
     <h3>
-Stuff YTm15 BETA makes use of
+Stuff YTm15 makes use of
     </h3>
     </div>
 
     <div class="ap-shelf-content">
     <div class="ap-shelf-text">APIs:
--(formerly used by original YTm15) Invidious API (<a href="https://docs.invidious.io/api/">https://docs.invidious.io/api/</a>) [<!-- to be replaced -->replaced by YT-API from rapidapi, this API no-longer works so it will no-longer be used]
+-(formerly) Invidious API (<a href="https://docs.invidious.io/api/">https://docs.invidious.io/api/</a>) [<!-- to be replaced -->replaced by YT-API from rapidapi, this API no-longer works so it will no-longer be used]
 
--(formerly used by original YTm15) YouTube Operational API (<a href="https://yt.lemnoslife.com/">https://yt.lemnoslife.com/</a>) [this API is dead so it's no-longer in use]
+-(formerly) YouTube Operational API (<a href="https://yt.lemnoslife.com/">https://yt.lemnoslife.com/</a>) [this API is dead so it's no-longer in use]
 
 -YT-API from RapidAPI (credit to ytjar) (<a href="https://rapidapi.com/ytjar/api/yt-api">https://rapidapi.com/ytjar/api/yt-api</a>)
 
@@ -96,13 +89,9 @@ Stuff YTm15 BETA makes use of
 
 -Return YouTube Dislike API (<a href="https://returnyoutubedislikeapi.com/swagger/">https://returnyoutubedislikeapi.com/swagger/</a>)
 
--legoskid's Pull Request #60 (<a href="https://github.com/ytm15/ytm15.github.io/pull/60/">https://github.com/ytm15/ytm15.github.io/pull/60/</a>)
-
--(<a href="used by YTm15 BETA EraCast Branch (experimental)">https://ytm15-beta-org.github.io/eracast/</a>) legoskid's Pull Request #65 (<a href="https://github.com/ytm15/ytm15.github.io/pull/65/">https://github.com/ytm15/ytm15.github.io/pull/65/</a>)
-
 Player:
 -Custom-built player made just for YTm15 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm15 player doesn't play)
-(Original YTm15 formerly used YouTube's embed player, and Invidious' embed player before that)
+(Formely used YouTube's embed player, and Invidious' embed player before that)
 <!-- Polyfills:
 -Polyfill.io (<a href="https://polyfill.io/">https://polyfill.io/</a>) (this line of text was removed on 31 Aug 2024 due to polyfill.io being shut down for some reason) -->
 Other JS Plugins:
@@ -130,9 +119,9 @@ Changelog
     </div>
     <footer class="about-page-footer">
     <div class="ap-footer-content">
-    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pulls/60">the appropiate pull request.</a></h3>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15/ytm15.github.io/">Github page</a></h4>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2025, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
+    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? <a href="https://github.com/ytm15/ytm15.github.io/issues">Visit our Github's issues page</a></h3>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15.github.io/">Landing page</a> | <a href="https://github.com/ytm15/ytm15.github.io/">Github page</a></h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015, YouTube and Google | (ↄ) 2024, Yacine's remakes</h4>
     <h4 class="ap-footer-text small subhead">Please note that YTm15 is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>
@@ -149,7 +138,7 @@ Changelog
     aboutPage.appendChild(section);
 
     var title = document.querySelector("title");
-    title.textContent = 'About - 2015YouTube BETA';
+    title.textContent = 'About - 2015YouTube';
 
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(2, 3)[0] == "changelog") {
       sectLazyList.innerHTML = `<div class="ap-shelf">
@@ -562,152 +551,13 @@ a few hours later:
 
 18 Dec 2025:
 -Removed material ripple from setting textbox options (This was done to avoid it conflicting the textbox while editing its value)
-
-BETA (or something):
-
-legoskid, 04 - 05 Dec 2025:
--Changed Invidious instance to inv.perditum.com
--Changed description for Invidious instances (kudos to Reddit user u/MalsOffical2011)
-
-legoskid, 08 Dec 2025:
--Added expflag WATCH_UI_NO_LINES
--Changed Subscriptions icon to more accurate unrounded SVG
-
-legoskid, 09 Dec 2025
--Added resetting the Invidious instance via leaving the field blank
-
-legoskid, 10 Dec 2025
--Added expflag WATCH_COMMENT_SECTION_LEFT
--Fixed expflag WATCH_UI_NO_LINES
-
-legoskid, 12 Dec 2025
--Made colored icons more accurate (kudos to CIIOIIIILLLLLLLLLLLLLLLL)
--Added Download and Save icons (SVG)
-
-legoskid, 15 Dec 2025
--Added PNG variants of Download and Save icons
--Added expflag WATCH_DOWNLOAD_BUTTON and WATCH_SAVE_BUTTON to enable Download and Save buttons
--Changed Polyfill to Cloudflare
--Changed PNG variants of Download and Save icons to be more accurate
-
-legoskid, 16 Dec 2025
--Added expflag WATCH_HIDE_SUBSCRIBE_ICON
-
-legoskid, 17 Dec 2025
--Changed expflag PIVOT_NOTIFICATIONS_IS_ACTIVITY to PIVOT_NOTIFICATIONS_ICON_VARIANT
--Added Inbox and Shared options to expflag PIVOT_NOTIFICATIONS_ICON_VARIANT
--Added "Send feedback" tab to YTm15 settings
-
-legoskid, 18 Dec 2025
--Added Install YTm15 tab to YTm15 settings
--Added temporary placeholder code for Camera option to expflag HEADER_CAST_BUTTON_AS_URL_BOX
-
-Entinty1999, 18 Dec 2025
--Forked legoskid/ytm15.github.io to create YTm15 BETA Restored at github.com/Entinty1999/YTm15-BETA
--Temporarily hosted GitHub Pages at ytm15-beta.neocities.org
-
-Entinty1999, 19 Dec 2025
--Added temporary ytm15-beta.neocities.org/app URL to index.html
--Created the YTm15 BETA Organization
--Moved YTm15 BETA Restored to the YTm15 BETA Organization at github.com/YTm15-BETA-org/YTm15-BETA-org.github.io
--Changed GitHub Pages site to ytm15-beta-org.github.io to fix Neocities iFrame issues as a more permanent URL
--Changed index.html link to new URL ytm15-beta-org.github.io/app
-
-Entinty1999, 20 Dec 2025
--Added YTm15 BETA Restored disclaimer to readme, including site link
-
-legoskid, 20 Dec 2025
--Fixed underlined links even when APP_UNDERLINE_BUTTONS is disabled (YTm15 issue #57)
-
-legoskid, 21 Dec 2025
--Added YouTube Red logo PNGs (2017 style, recolored for dark and light theme using Paint.NET 5.1.7)
--Added Camera SVG
-
-legoskid, 23 Dec 2025
--Added YouTube Premium logo PNGs (pre-2024 style)
-
-Entinty1999, 25 Dec 2025
--Changed YTm15 branding to YTm15 BETA in A LOT of places
--Added the BETA (or something) changelog
-
-Entinty1999, 27 Dec 2025
--Changed more YTm15 branding to YTm15 BETA
--Fixed "Install YTm15 BETA" tab to actually give correct information on YTm15 BETA instead of regular YTm15 (e.g. correct URL etc)
-
-legoskid, 31 Dec 2025
--Made the YTm15 player's progress bar hitbox bigger
--Fixed playlists breaking due to expflag APP_DONT_AUTH_TO_INVIDIOUS
--Added player errors so that the player will not appear as a black square when it fails to load the video
-
-legoskid, 1 Jan 2026
--Added new expflag HEADER_YOUTUBE_BRANDING
--Fixed the width of the YouTube Red logo asset
--Partially fixed expflag HEADER_CAST_ALTERNATE_ICON
--Fixed playlists and comments being broken in the last update
-
-legoskid, 6 Jan 2026
--Changed the Download SVG to be more accurate
--Added new expflag WATCH_AUTOPLAY_SWITCH (Autoplay toggle currently does not function)
--Fixed overflow of icons on smaller devices
-
-legoskid, 7 Jan 2026
--Fully fixed expflag HEADER_CAST_ALTERNATE_ICON to have working Camera icon
--Added "fun fact" to expflag HEADER_NO_SHADOW
-
-legoskid, 9 Jan 2026
--Fixed comments section being under ytm15-video-metadata when it was intended to be under wnr-2nd-half
--Changed the description of expflag APP_CUSTOM_INVIDIOUS_URL to add additional details on CORS disablers
--Added expflags HEADER_USE_ACCOUNT_ICON and HEADER_ACCOUNT_ICON_LINK to change menu button
-
-legoskid, 12 Jan 2026
--Fixed a minor typo in the last update
--Reverted default Invidious URL to the original one before this Pull Request due to issues (although kept newer cors proxy)
-
-legoskid, 13 Jan 2026
--Made expflag HEADER_ACCOUNT_ICON_LINK affect comments section PFP too
--Added options to "SAVE" and "LOAD" YTm15 Experimental Flags config (currently a bit broken)
--Added black banner notifications (e.g. "No connection," "Back online" popup banner), currently only used for config saving/loading
-
-legoskid, 14 Jan 2026
--Fixed positioning of the "SAVE" and "LOAD" buttons
--"Cleaned" the settings page
--Partially added proper functionality to "SAVE" and "LOAD" buttons
-
-legoskid, 15 Jan 2026
--Fixed Shorts not being clickable on channel sort menu
--Changed default Invidious instance to "y.com.sb"
--Added expflag WATCH_SAVE_IS_ADD_TO
-
-legoskid, 16 Jan 2026
--Added expflag PIVOT_TRENDING_IS_EXPLORE (purely cosmetic, does not change "Trending" interface beyond name and icon)
--Added expflag PIVOT_LIBRARY_UPDATED_ICON
-
-legoskid, 20 Jan 2026
--Added black banner notifications for "No connection" and "Back online"
-
-legoskid, 21 Jan 2026
--Changed iOS Spinner code to be more authentic to real iOS YouTube
-
-Entinty1999, 21 Jan 2026
--Fixed mentions of YTm15 BETA reset to YTm15 vanilla after latest merge conflict
--Changed "Check pull request #60" to "Check YTm15 pull requests" due to legoskid's new pull request #65
--Reverted mention of YTm15 BETA in Expermental Flags tab (I plan to label BETA expflags in a future update instead)
--Changed EVEN MORE branding to YTm15 BETA
--Added experimental "eracast" branch from YTm15 Pull Request #65, currently accessible at ytm15-beta-org.github.io/eracast (PR source selector will be added later if this experiment works, currently it is unmodified and uses vanilla YTm15 branding)
--Made numerous changes to the about page, including:
---Fixed broken "What is YTm15/YouTube Mobile 2015?" header
---Fixed "copyright" years to include ALL years
---Added credit for legoskid and I to the "copyright"s
---Fixed footer links to actually go to YTm15 BETA pages
---Added credit for experimental "eracast" branch from YTm15 Pull Request #65
-
     </div>
     </div>
     </div>
 `;
-      title.textContent = 'Changelog - 2015YouTube BETA';
-      headerTitle.setAttribute("aria-label", "YTm15 BETA Changelog");
-      headerTitle.textContent = "YTm15 BETA Changelog";
+      title.textContent = 'Changelog - 2015YouTube';
+      headerTitle.setAttribute("aria-label", "YTm15 Changelog");
+      headerTitle.textContent = "YTm15 Changelog";
     }
 
     if (APP_DEMATERIALIZE_UI_expflag == "true") {
@@ -718,9 +568,4 @@ Entinty1999, 21 Jan 2026
       item.classList.add('card');
       });
     }
-
 }
-
-
-
-

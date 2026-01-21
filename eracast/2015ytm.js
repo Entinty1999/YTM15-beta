@@ -143,16 +143,12 @@ USE_NEW_SUBSCRIBE_ICON_expflag = localStorage.getItem("USE_NEW_SUBSCRIBE_ICON");
 LIFT_PIVOT_BAR_FOR_PHONE_expflag = localStorage.getItem("LIFT_PIVOT_BAR_FOR_PHONE");
 PIVOT_SHRINK_SPACING_expflag = localStorage.getItem("PIVOT_SHRINK_SPACING");
 PIVOT_HIDE_NOTIFICATIONS_expflag = localStorage.getItem("PIVOT_HIDE_NOTIFICATIONS");
-PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag = localStorage.getItem("PIVOT_NOTIFICATIONS_ICON_VARIANT");
-if (PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag == undefined) {
-  localStorage.setItem("PIVOT_NOTIFICATIONS_ICON_VARIANT", "Notifications");
-  PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag = localStorage.getItem("PIVOT_NOTIFICATIONS_ICON_VARIANT");
-}
+PIVOT_NOTIFICATIONS_IS_ACTIVITY_expflag = localStorage.getItem("PIVOT_NOTIFICATIONS_IS_ACTIVITY");
 APP_HELVETICA_NEUE_FONT_expflag = localStorage.getItem("APP_HELVETICA_NEUE_FONT");
 APP_NEW_ERROR_SCREEN_expflag = localStorage.getItem("APP_NEW_ERROR_SCREEN");
 APP_CUSTOM_INVIDIOUS_URL_expflag = localStorage.getItem("APP_CUSTOM_INVIDIOUS_URL");
-if (APP_CUSTOM_INVIDIOUS_URL_expflag == undefined || APP_CUSTOM_INVIDIOUS_URL_expflag == "") {
-  localStorage.setItem("APP_CUSTOM_INVIDIOUS_URL", "https://api.codetabs.com/v1/proxy?quest=https://y.com.sb/");
+if (APP_CUSTOM_INVIDIOUS_URL_expflag == undefined) {
+  localStorage.setItem("APP_CUSTOM_INVIDIOUS_URL", "https://api.allorigins.win/raw?url=https://yt.omada.cafe/");
   APP_CUSTOM_INVIDIOUS_URL_expflag = localStorage.getItem("APP_CUSTOM_INVIDIOUS_URL");
 }
 APP_DONT_AUTH_TO_INVIDIOUS_expflag = localStorage.getItem("APP_DONT_AUTH_TO_INVIDIOUS");
@@ -167,36 +163,12 @@ DARK_THEME_SEPERATE_BACKGROUND_COLOR_expflag = localStorage.getItem("DARK_THEME_
 APP_UNDERLINE_BUTTONS_expflag = localStorage.getItem("APP_UNDERLINE_BUTTONS");
 HEADER_CAST_BUTTON_AS_URL_BOX_expflag = localStorage.getItem("HEADER_CAST_BUTTON_AS_URL_BOX");
 HEADER_CAST_ALTERNATE_ICON_expflag = localStorage.getItem("HEADER_CAST_ALTERNATE_ICON");
-if (HEADER_CAST_ALTERNATE_ICON_expflag == undefined) {
-  localStorage.setItem("HEADER_CAST_ALTERNATE_ICON", "true");
-  HEADER_CAST_ALTERNATE_ICON_expflag = localStorage.getItem("HEADER_CAST_ALTERNATE_ICON");
-}
 APP_STOP_TEXT_SELECTION_expflag = localStorage.getItem("APP_STOP_TEXT_SELECTION");
 if (APP_STOP_TEXT_SELECTION_expflag == undefined) {
   localStorage.setItem("APP_STOP_TEXT_SELECTION", "true");
   APP_STOP_TEXT_SELECTION_expflag = localStorage.getItem("APP_STOP_TEXT_SELECTION");
 }
-WATCH_UI_NO_LINES_expflag = localStorage.getItem("WATCH_UI_NO_LINES");
-WATCH_COMMENT_SECTION_LEFT_expflag = localStorage.getItem("WATCH_COMMENT_SECTION_LEFT");
-WATCH_DOWNLOAD_BUTTON_expflag = localStorage.getItem("WATCH_DOWNLOAD_BUTTON");
-WATCH_SAVE_BUTTON_expflag = localStorage.getItem("WATCH_SAVE_BUTTON");
-WATCH_HIDE_SUBSCRIBE_ICON_expflag = localStorage.getItem("WATCH_HIDE_SUBSCRIBE_ICON");
-HEADER_YOUTUBE_BRANDING_expflag = localStorage.getItem("HEADER_YOUTUBE_BRANDING");
-if (HEADER_YOUTUBE_BRANDING_expflag == undefined) {
-  localStorage.setItem("HEADER_YOUTUBE_BRANDING", "YouTube");
-  HEADER_YOUTUBE_BRANDING_expflag = localStorage.getItem("HEADER_YOUTUBE_BRANDING");
-}
-WATCH_AUTOPLAY_SWITCH_expflag = localStorage.getItem("WATCH_AUTOPLAY_SWITCH");
-HEADER_USE_ACCOUNT_ICON_expflag = localStorage.getItem("HEADER_USE_ACCOUNT_ICON");
-HEADER_ACCOUNT_ICON_LINK_expflag = localStorage.getItem("HEADER_ACCOUNT_ICON_LINK");
-if (HEADER_ACCOUNT_ICON_LINK_expflag == undefined) {
-  localStorage.setItem("HEADER_ACCOUNT_ICON_LINK", "");
-  HEADER_ACCOUNT_ICON_LINK_expflag = localStorage.getItem("HEADER_ACCOUNT_ICON_LINK");
-}
-WATCH_SAVE_IS_ADD_TO_expflag = localStorage.getItem("WATCH_SAVE_IS_ADD_TO");
-PIVOT_TRENDING_IS_EXPLORE_expflag = localStorage.getItem("PIVOT_TRENDING_IS_EXPLORE");
-PIVOT_LIBRARY_UPDATED_ICON_expflag = localStorage.getItem("PIVOT_LIBRARY_UPDATED_ICON");
-
+ERACAST_MODE_option = localStorage.getItem("ERACAST_MODE");
 
 newErrorHtml = `<button class="error-content" onClick="location.reload();">
 <!-- <img class="error-icon ytm15-img" src="alert_error.png"></img><br> -->
@@ -358,18 +330,6 @@ if (APP_STOP_TEXT_SELECTION_expflag == "true") {
 } else {
   documentHTML.classList.remove("text-selection");
 }
-
-if (WATCH_UI_NO_LINES_expflag == "true") {
-  documentHTML.classList.add("no-lines");
-} else {
-  documentHTML.classList.remove("no-lines");
-}
-
-if (WATCH_HIDE_SUBSCRIBE_ICON_expflag == "true") {
-  documentHTML.classList.add("no-subscribe-icon");
-} else {
-  documentHTML.classList.remove("no-subscribe-icon");
-}
 };
 
 localStorageChange();
@@ -423,7 +383,7 @@ Subscribe_text_string = "Subscribe"
 Home_text_string = "Home"
 Popular_text_string = "Popular"
 Trending_text_string = "Trending"
-_2015YT_text_string = "2015YouTube BETA"
+_2015YT_text_string = "2015YouTube"
 SearchYT_text_string = "Search YouTube"
 /* Channel_Home_WIP_text_string = "Channel pages' home pages are currently being worked on. Please check back later" */
 Channel_Home_WIP_text_string = "Channel pages' home pages haven't been built yet. Please check back later";
@@ -431,12 +391,6 @@ Channel_Home_WIP_text_string = "Channel pages' home pages haven't been built yet
 No_Search_Results_text_string = "No results found. Try different keywords";
 Dead_End_text_string = "Looks like you've reached the end";
 Share_text_string = "Share";
-Download_text_string = "Download";
-if (WATCH_SAVE_IS_ADD_TO_expflag == true) {
-  Save_text_string = "Add to";
-} else {
-  Save_text_string = "Save";
-}
 DescMusic_text_string = "Music in this video";
 LearnMore_text_string = "Learn more";
 Song_text_string = "Song";
@@ -448,12 +402,12 @@ Settings_text_string = "Settings";
 General_text_string = "General";
 SettingsMSG_text_string = "There is no page open at the current moment";
 ExpFlags_text_string = "YTm15 Experimental Flags";
-Feedback_text_string = "Send feedback";
-InstallYtm15_text_string = "Install YTm15 BETA";
 SettingsMSG2_text_string = "To be added in the near future";
-AboutYTm15_text_string = "About YTm15 BETA";
+AboutYTm15_text_string = "About YTm15";
 DarkTheme_text_string = "Dark theme";
 DarkThemeDesc_text_string = "Enable dark theme throughout the app";
+EraCast_text_string = "EraCast mode";
+EraCastDesc_text_string = "Connect to EraCast servers";
 About_text_string = "About";
 ReturnHomepage_text_string = "Return home";
 Reload_text_string = "Refresh";
@@ -479,14 +433,9 @@ Ok_text_string = "Ok";
 UpNext_text_string = "Up next";
 Replies_text_string = "Replies";
 Subs_text_string = "Subscriptions";
-if (PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag == "Activity") {
+Notifs_text_string = "Notifications";
+if (PIVOT_NOTIFICATIONS_IS_ACTIVITY_expflag == "true") {
   Notifs_text_string = "Activity";
-} else if (PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag == "Inbox") {
-  Notifs_text_string = "Inbox";
-} else if (PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag == "Shared") {
-  Notifs_text_string = "Shared";
-} else {
-  Notifs_text_string = "Notifications";
 }
 Library_text_string = "Library";
 AddComment_text_string = "Add a public comment...";
@@ -695,9 +644,6 @@ function renderCommentSection(parent, mediaType, cmSource, isCMPage, comntId, co
     if (APP_DEMATERIALIZE_UI_expflag == "true") {
       commentSection.classList.add('card');
     }
-    if (WATCH_COMMENT_SECTION_LEFT_expflag == "true" && WATCH_UI_NO_LINES_expflag == "false") {
-      commentSection.style.borderTop = "1.2px solid rgba(0,0,0,0.2)"
-    };
     if (mediaType == "video" && !isCMPage) {
      commentSection.classList.add("watch-next-results-content");
      commentSection.dataset.contentType = "result";
@@ -714,7 +660,7 @@ function renderCommentSection(parent, mediaType, cmSource, isCMPage, comntId, co
     commentSimplebox.classList.add("comment-simplebox");
     commentSimplebox.innerHTML = `
 <div class="profile-icon comment-simplebox-icon">
-<img class="profile-img ytm15-img lazy" loading="lazy" src="${HEADER_ACCOUNT_ICON_LINK_expflag == "" ? "https://yt3.ggpht.com/a/default-user=s100-c-k-c0x00ffffff-no-rj" : HEADER_ACCOUNT_ICON_LINK_expflag}"></img>
+<img class="profile-img ytm15-img lazy" loading="lazy" src="https://yt3.ggpht.com/a/default-user=s100-c-k-c0x00ffffff-no-rj"></img>
 </div>
 <div class="comment-simplebox-input">
 <div class="comment-simplebox-placeholder">
@@ -879,7 +825,7 @@ ${pinnedCMBadge}
 
     const getCommentsTitle = new XMLHttpRequest();
     getCommentsTitle.open('GET', APIbaseURL + 'api/v1/channels/' + item.authorId, true);
-    if (APP_DONT_AUTH_TO_INVIDIOUS_expflag == "false"){getCommentsTitle.setRequestHeader('Authorization','Basic eXRtMTU6SlFKNTNLckxBRVk2RTVxaGdjbTM4UGtTenczYlpYbWs=');};
+    getCommentsTitle.setRequestHeader('Authorization','Basic eXRtMTU6SlFKNTNLckxBRVk2RTVxaGdjbTM4UGtTenczYlpYbWs=');
 
     getCommentsTitle.onerror = function(event) {
     console.error("An error occurred with this operation (" + getCommentsTitle.status + ")");
@@ -1168,7 +1114,7 @@ function renderPivotBar(){
     {
       "name": Subs_text_string,
       "pivotName": "subscriptions",
-      "iconPath": "M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 8v12H2V10h20zm-6 6-6-3.27v6.53L16 16z",
+      "iconPath": "M20,8H4V6H20V8M18,2H6V4H18V2M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A2,2 0 0,1 4,10H20A2,2 0 0,1 22,12M16,16L10,12.73V19.26L16,16Z",
       "link": "subscriptions"
     },
     {
@@ -1184,9 +1130,6 @@ function renderPivotBar(){
       "link": "library"
     }
     ];
-    if (PIVOT_NOTIFICATIONS_ICON_VARIANT_expflag == "Inbox") {pivotBarItems[3].iconPath = "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"}
-    if (PIVOT_TRENDING_IS_EXPLORE_expflag == "true") {pivotBarItems[1].iconPath = "M14.19,14.19L6,18L9.81,9.81L18,6M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,10.9A1.1,1.1 0 0,0 10.9,12A1.1,1.1 0 0,0 12,13.1A1.1,1.1 0 0,0 13.1,12A1.1,1.1 0 0,0 12,10.9Z";pivotBarItems[1].name = "Explore"}
-    if (PIVOT_LIBRARY_UPDATED_ICON_expflag == "true") {pivotBarItems[4].iconPath = "M4,6H2V20A2,2 0 0,0 4,22H18V20H4V6M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M12,14.5V5.5L18,10L12,14.5Z"}
     pivotBar.innerHTML = "";
     pivotBarItems.forEach(function(item){
       const pivotBarItem = document.createElement("div");
@@ -1250,7 +1193,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         } else if (mediaType == "hashtag") {
         thumbnail.href = "#" + itemVideoId;
         }
-        if (mediaType == "video" || mediaType == "shortVideo" || mediaType == "shorts") {
+        if (mediaType == "video" || mediaType == "shortVideo") {
         thumbnail.onclick = function(){
         if (!app.querySelector("#watchpageFrame_Container")) {
         app.insertAdjacentElement("afterbegin", watchContainer);
@@ -1453,7 +1396,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         } else if (mediaType == "hashtag") {
         metaContent.href = "#" + itemVideoId;
         }
-        if (mediaType == "video" || mediaType == "shortVideo" || mediaType == "shorts") {
+        if (mediaType == "video" || mediaType == "shortVideo") {
         metaContent.onclick = function(){
         if (!app.querySelector("#watchpageFrame_Container")) {
         app.insertAdjacentElement("afterbegin", watchContainer);
@@ -2600,7 +2543,7 @@ if (window.location.hash.split("/").join(',').split("?").join(',').split(',').sl
     }
 if (!wasPrevChannelPage) {
     pageCont.innerHTML = "";
-    title.textContent = "2015YouTube BETA";
+    title.textContent = "2015YouTube";
     headerTitle.setAttribute("aria-label", _2015YT_text_string);
     headerTitle.textContent = _2015YT_text_string;
 }
@@ -2632,38 +2575,13 @@ if (window.location.hash.split("/").join(',').split("?").join(',').split(',').sl
 function settingsHashDetector() {
 settingsPage();
 }
-function showNotification(message) {
-  const n = document.createElement('div');
-  n.className = 'notification';
-  n.setAttribute('role', 'status');
-  n.setAttribute('aria-live', 'polite');
 
-  const text = document.createElement('span');
-  text.textContent = message;
-  n.appendChild(text);
-
-  document.body.appendChild(n);
-  void n.offsetHeight;
-  n.classList.add('notification-show');
-
-  setTimeout(() => dismiss(n), 3500);
-
-  function dismiss(el) {
-    el.classList.remove('notification-show');
-    el.addEventListener('transitionend', () => {
-      if (el.parentNode) el.parentNode.removeChild(el);
-    }, { once: true });
-  }
-
-  return n;
-}
-
-if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20BETA%20(Mobile)") {
+if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20(Mobile)") {
 if (window.location.pathname.split("/").slice(3, 4) == "index.html" || window.location.pathname.split("/").slice(3, 4) == undefined || window.location.pathname.split("/").slice(3, 4) == "") { 
 hashDetector();
 }
 }
-if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20BETA%20(Mobile)") {
+if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20(Mobile)") {
 if (window.location.pathname.split("/").slice(2, 3) == "index.html" || window.location.pathname.split("/").slice(2, 3) == undefined || window.location.pathname.split("/").slice(2, 3) == "") { 
 hashDetector();
 }
@@ -2673,36 +2591,14 @@ settingsHashDetector();
 }
 
 window.addEventListener('hashchange', function (event) {
-    if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20BETA%20(Mobile)") {
+    if (window.location.pathname.split("/").slice(2, 3) == "2015YouTube%20(Mobile)") {
     if (window.location.pathname.split("/").slice(3, 4) == "index.html" || window.location.pathname.split("/").slice(3, 4) == undefined || window.location.pathname.split("/").slice(3, 4) == "") { 
     hashDetector();
     }
     }
-    if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20BETA%20(Mobile)") {
+    if (window.location.pathname.split("/").slice(2, 3) !== "2015YouTube%20(Mobile)") {
     if (window.location.pathname.split("/").slice(2, 3) == "index.html" || window.location.pathname.split("/").slice(2, 3) == undefined || window.location.pathname.split("/").slice(2, 3) == "") { 
     hashDetector();
     }
     }
-});
-
-window.addEventListener('offline', () => {
-  const n = document.createElement('div');
-  n.setAttribute('id','offline-bar');
-  n.setAttribute('aria-live', 'polite');
-  n.innerHTML = "No connection";
-  pivotBar.after(n);
-  void n.offsetHeight;
-  n.classList.add('offline-bar-show');
-});
-window.addEventListener('online', () => {
-  const n = document.getElementById('offline-bar');
-  n.classList.add('offline-bar-online');
-  n.innerHTML = "Back online";
-  setTimeout(() => dismiss(n), 3500);
-  function dismiss(el) {
-    el.classList.remove('offline-bar-show');
-    el.addEventListener('transitionend', () => {
-      if (el.parentNode) el.parentNode.removeChild(el);
-    }, { once: true });
-  }
 });
