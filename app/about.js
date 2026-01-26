@@ -60,13 +60,14 @@ The 2015 YouTube experience, brought back to your smart device (BETA, or somethi
 
     <div class="ap-shelf-content">
     <div class="ap-shelf-text">YouTube Mobile 2015 BETA (or something, also known as YTm15 BETA) is a slightly modified fork of legoskid's Pull Request #60 on the original YTm15. Its goal is to host active Pull Requests on YTm15 so they can be tested by the general public without needing to set up a localhost. It is not affiliated with either Yacine-Book or legoskid. The maintainer of YTm15 BETA is Entinty1999.
+    <div class="ap-shelf-header">
     <h3>
     What is YTm15/YouTube Mobile 2015?
     </h3>
     </div>
 
     <div class="ap-shelf-content">
-    <div class="ap-shelf-text">YouTube Mobile 2015 (also known as YTm15) is a project of mine to rebuild the 2015 version of the interface of YouTube for mobile. The creator of YTm15 is Yacine Ghuloum.
+    <div class="ap-shelf-text">YouTube Mobile 2015 (also known as YTm15) is a project of mine [Yacine's] to rebuild the 2015 version of the interface of YouTube for mobile. The creator of YTm15 is Yacine Ghuloum.
 
 YTm15 BETA has been maintained since Dec 2025. The original YTm15 project has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015. (Or just for people who want to use YT with an older look<!-- ig -->)
 
@@ -80,25 +81,21 @@ Please note YTm15 BETA is based on flimsy code and I am not an experienced Javas
     <div class="ap-shelf">
     <div class="ap-shelf-header">
     <h3>
-Stuff YTm15 BETA makes use of
+Stuff YTm15 makes use of
     </h3>
     </div>
 
     <div class="ap-shelf-content">
     <div class="ap-shelf-text">APIs:
--(formerly used by original YTm15) Invidious API (<a href="https://docs.invidious.io/api/">https://docs.invidious.io/api/</a>) [<!-- to be replaced -->replaced by YT-API from rapidapi, this API no-longer works so it will no-longer be used]
+-(formerly) Invidious API (<a href="https://docs.invidious.io/api/">https://docs.invidious.io/api/</a>) [<!-- to be replaced -->replaced by YT-API from rapidapi, this API no-longer works so it will no-longer be used]
 
--(formerly used by original YTm15) YouTube Operational API (<a href="https://yt.lemnoslife.com/">https://yt.lemnoslife.com/</a>) [this API is dead so it's no-longer in use]
+-(formerly) YouTube Operational API (<a href="https://yt.lemnoslife.com/">https://yt.lemnoslife.com/</a>) [this API is dead so it's no-longer in use]
 
 -YT-API from RapidAPI (credit to ytjar) (<a href="https://rapidapi.com/ytjar/api/yt-api">https://rapidapi.com/ytjar/api/yt-api</a>)
 
 -Piped API (<a href="https://docs.piped.video/docs/api-documentation/">https://docs.piped.video/docs/api-documentation/</a>)
 
 -Return YouTube Dislike API (<a href="https://returnyoutubedislikeapi.com/swagger/">https://returnyoutubedislikeapi.com/swagger/</a>)
-
--legoskid's Pull Request #60 (<a href="https://github.com/ytm15/ytm15.github.io/pull/60/">https://github.com/ytm15/ytm15.github.io/pull/60/</a>)
-
--(<a href="used by YTm15 BETA EraCast Branch (experimental)">https://ytm15-beta-org.github.io/eracast/</a>) legoskid's Pull Request #65 (<a href="https://github.com/ytm15/ytm15.github.io/pull/65/">https://github.com/ytm15/ytm15.github.io/pull/65/</a>)
 
 Player:
 -Custom-built player made just for YTm15 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm15 player doesn't play)
@@ -107,6 +104,12 @@ Player:
 -Polyfill.io (<a href="https://polyfill.io/">https://polyfill.io/</a>) (this line of text was removed on 31 Aug 2024 due to polyfill.io being shut down for some reason) -->
 Other JS Plugins:
 -Swipe Listener (<a href="https://github.com/umanghome/swipe-listener">https://github.com/umanghome/swipe-listener</a>)
+
+YTm15 BETA:
+-legoskid's Pull Request #60 (<a href="https://github.com/ytm15/ytm15.github.io/pull/60/">https://github.com/ytm15/ytm15.github.io/pull/60/</a>)
+
+-(<a href="https://ytm15-beta-org.github.io/eracast">used by YTm15 BETA EraCast Branch (experimental)</a>) legoskid's Pull Request #65 (<a href="https://github.com/ytm15/ytm15.github.io/pull/65/">https://github.com/ytm15/ytm15.github.io/pull/65/</a>)
+
 </div>
     </div>
     </div>
@@ -126,14 +129,14 @@ Changelog
     <!-- <div class="item-section"> -->
     <!-- <div class="lazy-list no-animation"> -->
     <div class="about-page-bottom-title">
-    <h3 class="ap-bottom-title-text">YTm15, a project to bring back YT's old mobile UI</h3>
+    <h3 class="ap-bottom-title-text">YTm15 BETA, a project to host YTm15 Pull Requests - YTm15, a project to bring back YT's old mobile UI</h3>
     </div>
     <footer class="about-page-footer">
     <div class="ap-footer-content">
-    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pulls/60">the appropiate pull request.</a></h3>
+    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pull/60">the appropiate pull request.</a></h3>
     <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15/ytm15.github.io/">Github page</a></h4>
     <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2025, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
-    <h4 class="ap-footer-text small subhead">Please note that YTm15 is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
+    <h4 class="ap-footer-text small subhead">Please note that YTm15, and therefore YTm15 BETA, is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>
     <!-- </div> -->
@@ -701,6 +704,27 @@ Entinty1999, 21 Jan 2026
 --Fixed footer links to actually go to YTm15 BETA pages
 --Added credit for experimental "eracast" branch from YTm15 Pull Request #65
 
+legoskid, 22 Jan 2026
+-Added expflag WATCH_SAVE_UPDATED_ICON (newer Material Save icon)
+
+legoskid, 23 Jan 2026
+-Added a black banner notification for using Cast button with an empty clipboard
+-Fixed newer Material Save icon to make it fit properly
+-Fixed not being able to switch Cast button to older Material variant ever since the Camera icon was added
+-Added functionality to the Share button
+-Added assets for alternate icons in the player, including
+--Newer Share icon
+--Newer Add to icon
+--Cast icon
+-Added expflag WATCH_COLLAPSABLE_COMMENTS (currently only adds the icon, does not actually collapse the comments section)
+-Made the Profile/Library tab partially load (currently only gives error about "This shelf is empty" when loaded, but no longer crashes YTm15 when loaded without Pivot Bar enabled)
+
+Entinty1999, 26 Jan 2026
+-Refined the about page again, including the following changes:
+--Moved Pull Request credits down to a special YTm15 BETA category (instead of erroneously including them in the API category)
+--Fixed broken link to "eracast" Pull Request (Pull Request #65)
+--Fixed broken link to Pull Request #60 for reporting bugs
+
     </div>
     </div>
     </div>
@@ -720,6 +744,7 @@ Entinty1999, 21 Jan 2026
     }
 
 }
+
 
 
 
