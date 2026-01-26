@@ -724,6 +724,8 @@ Entinty1999, 26 Jan 2026
 --Moved Pull Request credits down to a special YTm15 BETA category (instead of erroneously including them in the API category)
 --Fixed broken link to "eracast" Pull Request (Pull Request #65)
 --Fixed broken link to Pull Request #60 for reporting bugs
+-Added YTm15 BETA's about.js to ytm15-beta-org.github.io/eracast, including relevant changes
+-Changed landing page (index.html) link to go to temporary "BETA Selector" page
 
     </div>
     </div>
