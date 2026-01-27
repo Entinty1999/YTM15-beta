@@ -728,6 +728,8 @@ Entinty1999, 26 Jan 2026
 -Added YTm15 BETA's about.js to ytm15-beta-org.github.io/eracast, including relevant changes
 -Changed landing page (index.html) link to go to temporary "BETA Selector" page
 
+legoskid, 27 Jan 2026
+-Added "Save" button functionality (adds video to Library page, currently very WIP, video data is "Test Video!")
     </div>
     </div>
     </div>
@@ -747,6 +749,7 @@ Entinty1999, 26 Jan 2026
     }
 
 }
+
 
 
 
