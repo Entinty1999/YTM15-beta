@@ -60,6 +60,7 @@ The 2015 YouTube experience, brought back to your smart device (BETA, or somethi
 
     <div class="ap-shelf-content">
     <div class="ap-shelf-text">YouTube Mobile 2015 BETA (or something, also known as YTm15 BETA) is a slightly modified fork of legoskid's Pull Request #60 on the original YTm15. Its goal is to host active Pull Requests on YTm15 so they can be tested by the general public without needing to set up a localhost. It is not affiliated with either Yacine-Book or legoskid. The maintainer of YTm15 BETA is Entinty1999.
+    </div>
     <div class="ap-shelf-header">
     <h3>
     What is YTm15/YouTube Mobile 2015?
@@ -99,7 +100,7 @@ Stuff YTm15 makes use of
 
 Player:
 -Custom-built player made just for YTm15 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm15 player doesn't play)
-(Original YTm15 formerly used YouTube's embed player, and Invidious' embed player before that)
+(formerly used YouTube's embed player, and Invidious' embed player before that)
 <!-- Polyfills:
 -Polyfill.io (<a href="https://polyfill.io/">https://polyfill.io/</a>) (this line of text was removed on 31 Aug 2024 due to polyfill.io being shut down for some reason) -->
 Other JS Plugins:
@@ -134,7 +135,7 @@ Changelog
     <footer class="about-page-footer">
     <div class="ap-footer-content">
     <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pull/60">the appropiate pull request.</a></h3>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15/ytm15.github.io/">Github page</a></h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/">Github page</a></h4>
     <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2025, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
     <h4 class="ap-footer-text small subhead">Please note that YTm15, and therefore YTm15 BETA, is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
@@ -746,6 +747,7 @@ Entinty1999, 26 Jan 2026
     }
 
 }
+
 
 
 
