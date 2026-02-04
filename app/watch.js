@@ -38,7 +38,7 @@ function renderWatchPage(parent) {
     }
     function saveVideo(videoId,url,lengthSeconds,title,author,authorId,publishedText,viewCount) {
         const library = JSON.parse(localStorage.getItem("WEB_LIBRARY")) || [];
-        library.push({videoId:videoId,videoThumbnails:[{url:url}],lengthSeconds:lengthSeconds,title:title,author:author,authorId:authorId,publishedText:publishedText,viewCount:viewCount});
+        library.unshift({videoId:videoId,videoThumbnails:[{url:url}],lengthSeconds:lengthSeconds,title:title,author:author,authorId:authorId,publishedText:publishedText,viewCount:viewCount});
         localStorage.setItem("WEB_LIBRARY",JSON.stringify(library));
         showNotification("Saved to playlist");
     }
@@ -529,7 +529,7 @@ function renderWatchPage(parent) {
     metadataActions.appendChild(mtrlBtnContDislike);
     metadataActions.appendChild(mtrlBtnContShare);
     mtrlBtnContShare.querySelector("button").addEventListener("click", shareVideo);
-    mtrlBtnContSave.querySelector("button").addEventListener("click", ()=>{saveVideo(playerVideoId,"/app/subscribe_mark.png","0","Test Video!","YouTube Mobile 2015","idk","Now",0)});
+    mtrlBtnContSave.querySelector("button").addEventListener("click", ()=>{saveVideo(playerVideoId,document.querySelector(".player-poster").style.backgroundImage.slice(4, -1).replace(/["']/g, ""),"0"/*document.querySelector(".player-duration").textContent*/,metaTitle.textContent,document.querySelector(".video-owner-title").textContent,document.querySelector(".profile-img").src,document.querySelector(".video-published-date"),parseInt(document.querySelector(".video-metadata-view-count .secondary-text").textContent.replace(/\D/g, "")),10)});
     metadataActions.appendChild(actionsSpacer);
     if (WATCH_DOWNLOAD_BUTTON_expflag == "true") {metadataActions.appendChild(mtrlBtnContDownload);};
     if (WATCH_SAVE_BUTTON_expflag == "true" && WATCH_ENABLE_NEW_UI_expflag == "true") {metadataActions.appendChild(mtrlBtnContSave);metadataActions.style.flexWrap = "nowrap"};
