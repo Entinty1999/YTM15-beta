@@ -136,7 +136,7 @@ Changelog
     <div class="ap-footer-content">
     <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pull/60">the appropiate pull request.</a></h3>
     <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/">Github page</a></h4>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2025, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2026, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
     <h4 class="ap-footer-text small subhead">Please note that YTm15, and therefore YTm15 BETA, is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>
@@ -730,6 +730,35 @@ Entinty1999, 26 Jan 2026
 
 legoskid, 27 Jan 2026
 -Added "Save" button functionality (adds video to Library page, currently very WIP, video data is "Test Video!")
+-Actually labeled the Account/Library page tab title as "Library" (on RED_HEADER_STYLE)
+
+legoskid, 28 Jan 2026
+-Fixed code typos
+-Fixed cut-off Autoplay switch
+-Actually implemented Collapsible Comments (2020+ comments)
+-Added notification when using Save button
+-Added description to expflag WATCH_SAVE_BUTTON, describing new Library functionality
+
+legoskid, 29 Jan 2026
+-Made the Autoplay switch cut-off even less noticeable than before
+-Added animation to collapsible comments
+
+legoskid, 30 Jan 2026
+-Made Autoplay toggle actually toggle and save (Autoplay is not implemented yet though)
+
+Yacine-Book, 30 Jan 2026
+-Made black bar toast notifications appear more accurate (CSS)
+
+legoskid, 3 Feb 2026
+-Added more information to "share not available" notification
+-Added expflag HEADER_ALWAYS_SHOW_YOUTUBE_TITLE (makes the Red Header Style always say "YouTube" rather than the tab title)
+-Added further clarification to expflag APP_CUSTOM_INVIDIOUS_URL
+-Added more tweaks under expflag NO_ANDROID_ANIMATIONS
+
+legoskid, 4 Feb 2026
+-Fixed various issues with Library item positioning
+-Made Library tab actually display proper details of saved videos (minus the timestamp)
+
     </div>
     </div>
     </div>
@@ -749,6 +778,7 @@ legoskid, 27 Jan 2026
     }
 
 }
+
 
 
 
