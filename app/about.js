@@ -136,7 +136,7 @@ Changelog
     <div class="ap-footer-content">
     <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? Assuming it's specific to this BETA, you should probably report them at <a href="https://github.com/ytm15/ytm15.github.io/pull/60">the appropiate pull request.</a></h3>
     <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-beta-org.github.io/">Landing page</a> | <a href="https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/">Github page</a></h4>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2026, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA specific code)</h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015-2020, YouTube and Google | (ↄ) 2024-2026, Yacine's remakes | (ↄ) 2025-2026, legoskid (for Pull Request #60) | (ↄ) 2025-2026, Entinty1999 (for YTm15 BETA + loading fix to Pull Request #60)</h4>
     <h4 class="ap-footer-text small subhead">Please note that YTm15, and therefore YTm15 BETA, is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>
@@ -773,6 +773,33 @@ Entinty1999, 8 Feb 2026:
 -Added mirror of vanilla YTm15 (hosted at ytm15-beta-org.github.io/vanilla-mirror)
 --Added YTm15 BETA changelog to the mirror, but renamed it to "Mirror changelog"
 -Added colons after dates in changelog for consistency with Yacine's changelog
+
+legoskid, 9 Feb 2026:
+-Fixed "three dot" menu button being offset after HEADER_MENU_BUTTON was added
+-Improved expflag HEADER_ALWAYS_SHOW_YOUTUBE_TITLE to now also use "YouTube" on the header while loading
+
+legoskid, 10 Feb 2026:
+-Added toast notification buttons for 2015 offline notification style
+-Defined new expflag APP_NO_INTERNET_POPUP_NEW_STYLE (not actually functional yet)
+
+legoskid, 11 Feb 2026:
+-Added advice on self-hosting YTm15 to the README
+
+legoskid, 12 Feb 2026:
+-Replaced eval for security and compatibility reasons
+
+Yacine-Book, 13 Feb 2026:
+-Replaced all arrow call-tos with function()s for old browser support (pre-ES6 JS)
+
+legoskid, 13 Feb 2026:
+-Added "Go online" button to 2015 offline notification style
+-Added "compatibility for older browsers" to README under "to-do"
+
+Entinty1999, 14 Feb 2026:
+-Updated README info (specifically to reference YTm15 BETA eracast and vanilla-mirror)
+
+Entinty1999 (upstream), 15 Feb 2026:
+-Fixed critical bug that caused an infinite loading screen
     </div>
     </div>
     </div>
@@ -792,6 +819,7 @@ Entinty1999, 8 Feb 2026:
     }
 
 }
+
 
 
 
