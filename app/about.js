@@ -800,6 +800,9 @@ Entinty1999, 14 Feb 2026:
 
 Entinty1999 (upstream), 15 Feb 2026:
 -Fixed critical bug that caused an infinite loading screen
+
+legoskid, 25 Feb 2026:
+-Fixed importing/exporting expflag configs
     </div>
     </div>
     </div>
@@ -819,6 +822,7 @@ Entinty1999 (upstream), 15 Feb 2026:
     }
 
 }
+
 
 
 
