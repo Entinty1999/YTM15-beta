@@ -803,6 +803,12 @@ Entinty1999 (upstream), 15 Feb 2026:
 
 legoskid, 25 Feb 2026:
 -Fixed importing/exporting expflag configs
+
+legoskid, 27 Feb 2026:
+-Removed the "This shelf is empty" notification from the Library tab
+--Added a proper empty Library tab
+-Expanded upon the "Install YTm15" description
+-Removed the non-functional "Search" tab from the Channels layout
     </div>
     </div>
     </div>
@@ -822,6 +828,7 @@ legoskid, 25 Feb 2026:
     }
 
 }
+
 
 
 
