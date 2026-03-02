@@ -809,6 +809,9 @@ legoskid, 27 Feb 2026:
 --Added a proper empty Library tab
 -Expanded upon the "Install YTm15" description
 -Removed the non-functional "Search" tab from the Channels layout
+
+legoskid, 2 Mar 2026:
+-Added expflag WATCH_CONDENSE_COMMENT_BUTTONS, which reduces the size of the gaps in the comments section in Landscape mode.
     </div>
     </div>
     </div>
@@ -828,6 +831,7 @@ legoskid, 27 Feb 2026:
     }
 
 }
+
 
 
 
