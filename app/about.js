@@ -817,7 +817,7 @@ legoskid, 3 Mar 2026:
 -Added expflag WATCH_FORMAT_LIKE_COUNTS (abbreviated like/dislike counts, like 1,000 to 1K, 1,000,000 to 1M etc)
 
 Yacine-Book, 3 Mar 2026:
--Made the video player return the last array it detects for the thumbnail
+-Made the video player return the last array it detects for the thumbnail (this fixed Me at the zoo not loading)
     </div>
     </div>
     </div>
@@ -837,6 +837,7 @@ Yacine-Book, 3 Mar 2026:
     }
 
 }
+
 
 
 
