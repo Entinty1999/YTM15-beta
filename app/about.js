@@ -812,6 +812,12 @@ legoskid, 27 Feb 2026:
 
 legoskid, 2 Mar 2026:
 -Added expflag WATCH_CONDENSE_COMMENT_BUTTONS, which reduces the size of the gaps in the comments section in Landscape mode.
+
+legoskid, 3 Mar 2026:
+-Added expflag WATCH_FORMAT_LIKE_COUNTS (abbreviated like/dislike counts, like 1,000 to 1K, 1,000,000 to 1M etc)
+
+Yacine-Book, 3 Mar 2026:
+-Made the video player return the last array it detects for the thumbnail
     </div>
     </div>
     </div>
@@ -831,6 +837,7 @@ legoskid, 2 Mar 2026:
     }
 
 }
+
 
 
 
