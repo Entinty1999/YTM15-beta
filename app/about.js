@@ -814,10 +814,13 @@ legoskid, 2 Mar 2026:
 -Added expflag WATCH_CONDENSE_COMMENT_BUTTONS, which reduces the size of the gaps in the comments section in Landscape mode.
 
 legoskid, 3 Mar 2026:
--Added expflag WATCH_FORMAT_LIKE_COUNTS (abbreviated like/dislike counts, like 1,000 to 1K, 1,000,000 to 1M etc)
+-Added expflag WATCH_FORMAT_LIKE_COUNTS (abbreviated like/dislike counts + comments + subscribers, like 1,000 to 1K, 1,000,000 to 1M etc)
 
 Yacine-Book, 3 Mar 2026:
 -Made the video player return the last array it detects for the thumbnail (this fixed Me at the zoo not loading)
+
+legoskid, 5 Mar 2026:
+-Added expflag APP_IOS_SYSTEM_FONT
     </div>
     </div>
     </div>
@@ -837,6 +840,7 @@ Yacine-Book, 3 Mar 2026:
     }
 
 }
+
 
 
 
