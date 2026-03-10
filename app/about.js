@@ -821,6 +821,9 @@ Yacine-Book, 3 Mar 2026:
 
 legoskid, 5 Mar 2026:
 -Added expflag APP_IOS_SYSTEM_FONT
+
+legoskid, 10 Mar 2026:
+-Added expflag WATCH_CONDENSE_COMMUNITY_POST_BUTTONS (Put likes and dislikes to left and comment button to the right, kudos to @ErikaXGH for the suggestion)
     </div>
     </div>
     </div>
@@ -840,6 +843,7 @@ legoskid, 5 Mar 2026:
     }
 
 }
+
 
 
 
