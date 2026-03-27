@@ -824,6 +824,10 @@ legoskid, 5 Mar 2026:
 
 legoskid, 10 Mar 2026:
 -Added expflag WATCH_CONDENSE_COMMUNITY_POST_BUTTONS (Put likes and dislikes to left and comment button to the right, kudos to @ErikaXGH for the suggestion)
+
+legoskid, 27 Mar 2026:
+-Added "Holo" to HEADER_CAST_ALTERNATE_ICON
+-Updated config saving/loading to exclude Library entries 
     </div>
     </div>
     </div>
