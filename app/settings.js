@@ -170,7 +170,7 @@ function settingsPage() {
 
     const settingsSaveAndLoad = document.createElement("div");
     settingsSaveAndLoad.style.display = "flex";
-    settingsSaveAndLoad.innerHTML = `<div class="material-button-container" data-style="grey_filled" data-icon-only="false" is-busy="false" aria-busy="false" disabled="false"><button class="material-button has-shadow" aria-label="Save" onclick="navigator.clipboard.writeText(JSON.stringify(localStorage)).then(()=>{showNotification('Copied! You can share this online or keep it as a backup.')}).catch(err=>{showNotification(err);});"><div class="button-text">Save</div></button></div><div class="material-button-container" data-style="grey_filled" data-icon-only="false" is-busy="false" aria-busy="false" disabled="false"><button class="material-button has-shadow" aria-label="Load" onclick="(async()=>{try{const clipboardText=await navigator.clipboard.readText();const data=JSON.parse(clipboardText);Object.keys(data).forEach(k=>{localStorage.setItem(k,parseImportedText(JSON.stringify(data[k])))});console.log('Data imported successfully');showNotification('Imported.');}catch(err){showNotification('To import expflags, copy a saved list into your clipboard. This will overwrite your current expflags, obviously. '+err)}})();"><div class="button-text">Load</div></button></div>`;
+    settingsSaveAndLoad.innerHTML = `<div class="material-button-container" data-style="grey_filled" data-icon-only="false" is-busy="false" aria-busy="false" disabled="false"><button class="material-button has-shadow" aria-label="Save" onclick="const{WEB_LIBRARY,...rest}=JSON.parse(JSON.stringify(localStorage));navigator.clipboard.writeText(JSON.stringify(rest)).then(()=>{showNotification('Copied! You can share this online or keep it as a backup.')}).catch(err=>{showNotification(err)});"><div class="button-text">Save</div></button></div><div class="material-button-container" data-style="grey_filled" data-icon-only="false" is-busy="false" aria-busy="false" disabled="false"><button class="material-button has-shadow" aria-label="Load" onclick="(async()=>{try{const clipboardText=await navigator.clipboard.readText();const data=JSON.parse(clipboardText);Object.keys(data).forEach(k=>{localStorage.setItem(k,parseImportedText(JSON.stringify(data[k])))});console.log('Data imported successfully');showNotification('Imported, Reload YTm15!');}catch(err){showNotification('To import expflags, copy a saved list into your clipboard. This will overwrite your current expflags, obviously. '+err)}})();"><div class="button-text">Load</div></button></div>`;
 
     const innerSettingsPageCont = document.createElement("div");
     innerSettingsPageCont.classList.add("inner-settings-page-container");
@@ -787,7 +787,7 @@ function settingsPage() {
         "title": "HEADER_CAST_BUTTON_AS_URL_BOX",
         "subtitle": "Copy a youtube link and press cast to open it in YTm15 BETA",
         "pressed": HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "HEADER_CAST_BUTTON_AS_URL_BOX"
       },
@@ -797,13 +797,18 @@ function settingsPage() {
         "subtitle": "",
         "options": [
           {
-            "title": "Material",
-            "selected": HEADER_CAST_ALTERNATE_ICON_expflag == "Material",
+            "title": "Holo",
+            "selected": HEADER_CAST_ALTERNATE_ICON_expflag == "Holo",
             "selected-default": true
           },
           {
-            "title": "Materialv2",
-            "selected": HEADER_CAST_ALTERNATE_ICON_expflag == "Materialv2",
+            "title": "Material",
+            "selected": HEADER_CAST_ALTERNATE_ICON_expflag == "Material",
+            "selected-default": false
+          },
+          {
+            "title": "Material_2",
+            "selected": HEADER_CAST_ALTERNATE_ICON_expflag == "Material_2",
             "selected-default": false
           },
           {
