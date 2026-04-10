@@ -828,6 +828,9 @@ legoskid, 10 Mar 2026:
 legoskid, 27 Mar 2026:
 -Added "Holo" to HEADER_CAST_ALTERNATE_ICON
 -Updated config saving/loading to exclude Library entries 
+
+legoskid, 10 Apr 2026:
+-Begun adding comment options/report menu
     </div>
     </div>
     </div>
