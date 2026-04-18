@@ -280,7 +280,7 @@ function settingsPage() {
       headerTitle.textContent = Feedback_text_string;
       title.textContent = Feedback_text_string + ' - 2015YouTube BETA';
 
-      settingsPage.innerHTML="<p>Open an issue on the YTm15 GitHub:<br>https://github.com/ytm15/ytm15.github.io/issues</p><p>Check YTm15 pull requests (If any of the features you want may be being added, and haven't been merged into YTm15 BETA yet):<br>https://github.com/ytm15/ytm15.github.io/pulls</p><p>You can also post on r/oldyoutubelayout (the dev is active there). If you have any issues with YTm15 BETA, post them at <br>https://github.com/ytm15-beta-org/ytm15-beta-org.github.io/issues , or YTm15 Pull Request #60 if they relate to legoskid's code.</p><p></p>";
+      settingsPage.innerHTML=`<p>Open an issue on the YTm15 GitHub (Reccommended), or, you can check for pull requests open and observe/ask (If any of the features you want may be being added, and haven't been merged into YTm15 BETA yet)</p><p>You can also post on r/oldyoutubelayout (the dev is active there)</p><p> If you have any issues with YTm15 BETA, post them on the YTm15 BETA GitHub Issues page, or YTm15 Pull Request #60 if they relate to the pull request's code.</p><a style="padding-right:1rem;" href="https://github.com/ytm15/ytm15.github.io/issues"><img alt="YTm15 (vanilla) GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/ytm15/ytm15.github.io?style=for-the-badge&link=https%3A%2F%2Fgithub.com%2Fytm15%2Fytm15.github.io%2Fissues"></a><a style="padding-right:1rem;" href="https://github.com/ytm15/ytm15.github.io/issues"><img alt="YTm15 (vanilla) GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/ytm15/ytm15.github.io?style=for-the-badge&link=https%3A%2F%2Fgithub.com%2Fytm15%2Fytm15.github.io%2Fpulls"></a><a href="https://www.reddit.com/r/oldyoutubelayout"><img alt="Static Badge" src="https://img.shields.io/badge/r%2Foldyoutubelayout-FF4500?style=for-the-badge&link=https%3A%2F%2Fwww.reddit.com%2Fr%2Foldyoutubelayout"></a>`;
       }
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "install") {
       /* innerSettingsPageCont.innerHTML = `
@@ -304,7 +304,7 @@ function settingsPage() {
       headerTitle.textContent = InstallYtm15_text_string;
       title.textContent = InstallYtm15_text_string + ' - 2015YouTube BETA';
 
-      settingsPage.innerHTML=`<table style="border-top: 1px solid;border-bottom: 1px solid;margin-bottom:1rem;"><tr style="font-size:18px;"><td><img src="icon.png" width=60 style="padding-right: 5px;"></td><td>2015YouTube BETA<br><span style="font-size:16px;">ytm15-beta-org.github.io</span></td><td class="has-ripple" style="text-align:right;width: 100%;padding-right:3rem"><span style="border:1.2px solid rgba(0, 0, 0, 0.15);padding:3px;font-weight:bold;text-transform:uppercase;background:#f3f3f3;">Get as a Webapp</td></tr></table>Modern devices:<ol style="font-size: 15px;"><li>Open Safari (iOS)/Chrome (Android)</li><li>Go to <b>https://ytm15-beta-org.github.io/app</b></li><li>Press "share"/the three dots</li><li>Press "Add to Home Screen"</li></ol>YTm15 is not supported on ≤iOS 9, or maybe some old versions of Android, if you are using the native WebView/Browser, but this shouldn't be an issue as you can install a newer browser APK. Hopefully, that will change too. Alternatively, there are websites online that can let you turn a website into an APK, but note what I said if it uses WebView.`;
+      settingsPage.innerHTML=`<table style="border-top: 1px solid;border-bottom: 1px solid;margin-bottom:1rem;"><tr style="font-size:18px;"><td><img src="icon.png" width=60 style="padding-right: 5px;"></td><td>2015YouTube BETA<br><span style="font-size:16px;">ytm15-beta-org.github.io</span></td><td class="has-ripple" style="text-align:right;width: 100%;padding-right:3rem"><span style="border:1.2px solid rgba(0, 0, 0, 0.15);padding:3px;font-weight:bold;text-transform:uppercase;background:#f3f3f3;">Get as a Webapp</td></tr></table>Modern devices:<ol style="font-size: 15px;"><li>Open Safari (iOS)/Chrome (Android)</li><li>Go to <b>https://ytm15-beta-org.github.io/app</b></li><li>Press "share"/the three dots</li><li>Press "Add to Home Screen"</li></ol>YTm15 is not supported on ≤iOS 9. For Android, you may need to get a updated browser APK if your native browser dooesn't work. Hopefully, that will change too. Alternatively, there are websites online that can let you turn a website into an APK, but make sure it is using an updated browser engine if it isn't supported normally/natively.`;
       }
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "expflags") {
       /* innerSettingsPageCont.innerHTML = `
@@ -962,7 +962,7 @@ function settingsPage() {
       {
         "type": "boolean",
         "title": "WATCH_COLLAPSABLE_COMMENTS",
-        "subtitle": "",
+        "subtitle": "This is not acccurate yet, and is provided for convienence/partial-accuracy. This will be revised later",
         "pressed": WATCH_COLLAPSABLE_COMMENTS_expflag == "true",
         "pressed-default": false,
         "disabled": false,
@@ -1033,12 +1033,21 @@ function settingsPage() {
       },
       {
         "type": "boolean",
-        "title": "WATCH_COMMENTS_POSTS_ADD_OPTIONS",
+        "title": "WATCH_COMMENTS_ADD_OPTIONS",
         "subtitle": "",
-        "pressed": WATCH_COMMENTS_POSTS_ADD_OPTIONS_expflag == "true",
+        "pressed": WATCH_COMMENTS_ADD_OPTIONS_expflag == "true",
         "pressed-default": false,
         "disabled": false,
-        "lsitem": "WATCH_COMMENTS_POSTS_ADD_OPTIONS"
+        "lsitem": "WATCH_COMMENTS_ADD_OPTIONS"
+      },
+      {
+        "type": "boolean",
+        "title": "WATCH_COMMUNITY_POSTS_ADD_OPTIONS",
+        "subtitle": "",
+        "pressed": WATCH_COMMUNITY_POSTS_ADD_OPTIONS_expflag == "true",
+        "pressed-default": false,
+        "disabled": false,
+        "lsitem": "WATCH_COMMUNITY_POSTS_ADD_OPTIONS"
       }
       ];
       settingBlocks.forEach(function(item){
