@@ -831,6 +831,15 @@ legoskid, 27 Mar 2026:
 
 legoskid, 10 Apr 2026:
 -Begun adding comment options/report menu
+
+legoskid, 15 Apr 2026:
+-Fixed expflag WATCH_SAVE_IS_ADD_TO not working due to coding error
+-Updated the "Install YTm15" tab to use less complex wording
+
+legoskid, 17 Apr 2026:
+-Continued work on comment options/report menu
+-Added note to expflag WATCH_COLLAPSABLE_COMMENTS that it is currently inaccurate and will be revised later
+-Added clickable badges to the "Send feedback" tab
     </div>
     </div>
     </div>
