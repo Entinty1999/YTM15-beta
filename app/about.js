@@ -840,6 +840,11 @@ legoskid, 17 Apr 2026:
 -Continued work on comment options/report menu
 -Added note to expflag WATCH_COLLAPSABLE_COMMENTS that it is currently inaccurate and will be revised later
 -Added clickable badges to the "Send feedback" tab
+
+legoskid, 24 Apr 2026:
+-Added Shared icon by @CIIOIIIILLLLLLLLLLLLLLLL (not accurate yet)
+-Expflag PIVOT_TRENDING_IS_EXPLORE now also changes the Trending icon on the 2015 header with the Explore one
+
     </div>
     </div>
     </div>
