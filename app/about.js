@@ -567,6 +567,10 @@ a few hours later:
 18 Dec 2025:
 -Removed material ripple from setting textbox options (This was done to avoid it conflicting the textbox while editing its value)
 
+05 Jun 2026 (1st update of 2026!):
+-Removed use of the "polyfill.js" plugin
+-Removed material ripple from setting textbox options (This was done to avoid it conflicting the textbox while editing its value)
+
 BETA (or something):
 
 legoskid, 04 - 05 Dec 2025:
