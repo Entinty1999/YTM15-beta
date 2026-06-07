@@ -849,6 +849,13 @@ legoskid, 24 Apr 2026:
 -Added Shared icon by @CIIOIIIILLLLLLLLLLLLLLLL (not accurate yet)
 -Expflag PIVOT_TRENDING_IS_EXPLORE now also changes the Trending icon on the 2015 header with the Explore one
 
+legoskid, 5 Jun 2026:
+-Fixed various typos
+-Fixed colors
+-Reviewed code, fixed some issues
+-Fixed profile images on saved videos
+-Fixed variable typos
+
     </div>
     </div>
     </div>
